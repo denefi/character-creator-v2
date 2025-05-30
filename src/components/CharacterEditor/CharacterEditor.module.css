@@ -1,30 +1,62 @@
 .characterEditor {
-  padding-top: 128px;
-  padding-bottom: 64px;
+    padding-top: 128px;
+    padding-bottom: 64px;
+    margin-bottom: 128px;
+    position: relative;
 }
 
 .maxWidthWrapper {
 }
 
 .header {
-  padding-bottom: 64px;
+    padding-bottom: 64px;
+    width: 65%;
 }
 
 .title {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 16px;
-  letter-spacing: -0.5px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
 }
 
 .description {
-  font-size: 1.25rem;
-  margin: 0;
+    font-size: 1.25rem;
+    margin: 0;
 }
 
 .characterWrapper {
+    display: block;
+    position: fixed;
+    top: 120px;
+    left: 60%;
+    min-height: 500px;
+    bottom: 5%;
+    /* min-width: 500px; */
 }
 
 .controlColumn {
+    width: 50%;
+}
+@media (max-width: 980px) {
+    .controlColumn {
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        overflow: auto;
+        gap: 10px;
+        left: 0;
+        right: 0;
+        bottom: 20%;
+    }
+}
+.backgroundBar {
+    position: fixed;
+    top: 60%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: hsl(195deg, 20%, 86%);
 }
